@@ -29,34 +29,114 @@
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtIndex = new System.Windows.Forms.TextBox();
+            this.labelIndex = new System.Windows.Forms.Label();
+            this.txtPoint = new System.Windows.Forms.TextBox();
+            this.labelPoint = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(265, 26);
+            this.listBox1.Location = new System.Drawing.Point(155, 26);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(256, 214);
+            this.listBox1.Size = new System.Drawing.Size(366, 214);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(23, 26);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(39, 15);
+            this.labelName.TabIndex = 1;
+            this.labelName.Text = "Name";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(23, 46);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 23);
+            this.txtName.TabIndex = 2;
+            // 
+            // txtIndex
+            // 
+            this.txtIndex.Location = new System.Drawing.Point(23, 100);
+            this.txtIndex.Name = "txtIndex";
+            this.txtIndex.Size = new System.Drawing.Size(100, 23);
+            this.txtIndex.TabIndex = 2;
+            // 
+            // labelIndex
+            // 
+            this.labelIndex.AutoSize = true;
+            this.labelIndex.Location = new System.Drawing.Point(23, 80);
+            this.labelIndex.Name = "labelIndex";
+            this.labelIndex.Size = new System.Drawing.Size(36, 15);
+            this.labelIndex.TabIndex = 1;
+            this.labelIndex.Text = "Index";
+            // 
+            // txtPoint
+            // 
+            this.txtPoint.Location = new System.Drawing.Point(23, 157);
+            this.txtPoint.Name = "txtPoint";
+            this.txtPoint.Size = new System.Drawing.Size(100, 23);
+            this.txtPoint.TabIndex = 2;
+            // 
+            // labelPoint
+            // 
+            this.labelPoint.AutoSize = true;
+            this.labelPoint.Location = new System.Drawing.Point(23, 137);
+            this.labelPoint.Name = "labelPoint";
+            this.labelPoint.Size = new System.Drawing.Size(35, 15);
+            this.labelPoint.TabIndex = 1;
+            this.labelPoint.Text = "Point";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(23, 216);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "ADD";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelPoint);
+            this.Controls.Add(this.txtPoint);
+            this.Controls.Add(this.labelIndex);
+            this.Controls.Add(this.txtIndex);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtIndex;
+        private System.Windows.Forms.Label labelIndex;
+        private System.Windows.Forms.TextBox txtPoint;
+        private System.Windows.Forms.Label labelPoint;
+        private System.Windows.Forms.Button button1;
     }
 }
 
